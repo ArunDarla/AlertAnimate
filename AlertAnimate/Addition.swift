@@ -18,6 +18,7 @@ public class Addition {
         
         var finalNumber = NumberFirst + otherNumber
         finalNumber += 2
+        finalNumber -= 2
         
         return finalNumber
     }
