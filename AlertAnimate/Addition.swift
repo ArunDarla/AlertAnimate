@@ -16,8 +16,8 @@ public class Addition {
     public func AddTwoNumbers(NumberFirst:Int, otherNumber: Int) -> Int {
         
         
-        let finalNumber = NumberFirst + otherNumber
-        
+        var finalNumber = NumberFirst + otherNumber
+        finalNumber += 2
         
         return finalNumber
     }
