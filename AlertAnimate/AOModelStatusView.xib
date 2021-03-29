@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AOModelStatusView" customModule="AlertAnimate" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLbl" destination="xdR-a4-2eY" id="y11-FF-odx"/>
+                <outlet property="sampleImg" destination="mlE-9o-RQf" id="5GP-Zo-WCz"/>
+                <outlet property="subTitleLbl" destination="TLv-T8-2VW" id="PTf-My-G1m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6K-S2-zu8">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vn9-VJ-Bxj">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airpodspro" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mlE-9o-RQf">
+                        <rect key="frame" x="45" y="25.5" width="140" height="136.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="bJT-Qs-zX8"/>
+                            <constraint firstAttribute="width" constant="140" id="eby-Vc-nfJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-a4-2eY">
+                        <rect key="frame" x="6" y="166" width="218" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="G3a-vv-SJh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLv-T8-2VW">
+                        <rect key="frame" x="6" y="188" width="218" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="EPr-Ie-VSi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="TLv-T8-2VW" firstAttribute="top" secondItem="xdR-a4-2eY" secondAttribute="bottom" constant="-2" id="6Fe-OX-ZT5"/>
+                    <constraint firstAttribute="trailing" secondItem="TLv-T8-2VW" secondAttribute="trailing" constant="6" id="BUT-XI-svS"/>
+                    <constraint firstItem="xdR-a4-2eY" firstAttribute="leading" secondItem="vn9-VJ-Bxj" secondAttribute="leading" constant="6" id="F2d-hK-9KG"/>
+                    <constraint firstItem="mlE-9o-RQf" firstAttribute="centerX" secondItem="vn9-VJ-Bxj" secondAttribute="centerX" id="JJr-4f-6cQ"/>
+                    <constraint firstItem="xdR-a4-2eY" firstAttribute="top" secondItem="mlE-9o-RQf" secondAttribute="bottom" constant="2" id="Q80-JR-blf"/>
+                    <constraint firstItem="xdR-a4-2eY" firstAttribute="centerX" secondItem="vn9-VJ-Bxj" secondAttribute="centerX" id="b3o-8N-1li"/>
+                    <constraint firstItem="TLv-T8-2VW" firstAttribute="leading" secondItem="vn9-VJ-Bxj" secondAttribute="leading" constant="6" id="jiK-bL-qoI"/>
+                    <constraint firstAttribute="trailing" secondItem="xdR-a4-2eY" secondAttribute="trailing" constant="6" id="pZ4-hG-0ub"/>
+                    <constraint firstItem="mlE-9o-RQf" firstAttribute="top" secondItem="vn9-VJ-Bxj" secondAttribute="top" constant="24" id="wGN-Uu-KGL"/>
+                </constraints>
+            </view>
+            <constraints>
+                <constraint firstAttribute="width" constant="230" id="MMB-DH-hnV"/>
+                <constraint firstAttribute="height" constant="230" id="zx9-D8-fOv"/>
+            </constraints>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </visualEffectView>
+    </objects>
+    <resources>
+        <image name="airpodspro" catalog="system" width="128" height="81"/>
+    </resources>
+</document>
